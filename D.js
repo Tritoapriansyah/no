@@ -3404,7 +3404,7 @@ _🎲LIMIT: ${isOwner ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender,
 │✙ *${prefix}rules*
 └─────────────────┈ ⳹
 
-┏━━━━━「 DEFFBOTZ 」━━━━━━⭓ 
+┏━━━━━「 JBOT V1 」━━━━━━⭓ 
 ┃╔═══════════✪「 OWNER 」	        
 ┃╠${prefix}broadcast
 ┃╠${prefix}broadcast2
@@ -3493,7 +3493,7 @@ _🎲LIMIT: ${isOwner ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender,
 ┃╠${prefix}joox *query*
 ┃╠${prefix}image *query* (Limit) 
 ┃╠${prefix}pinterest
-┃╠═══════════✪「 STICKER」
+┃╠═══════════✪「 STICKER 」
 ┃╠${prefix}gura (Limit) 
 ┃╠═══════════✪「 TOOLS 」
 ┃╠${prefix}nulis (Limit) 
@@ -3519,7 +3519,7 @@ _🎲LIMIT: ${isOwner ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender,
 ┃╠${prefix}leaderboards
 ┃╚═════════════════✪
 ┗━━━「 JBOT V1 」━━━⭓
-*This script not have a apikey*
+*This bot not have a apikey*
     `
   , imageMessage: imageMsg,
     buttons: buttons,
