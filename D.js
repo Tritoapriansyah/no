@@ -8,7 +8,25 @@
 //╚═╩═══• •✠•❀•✠ • •════╝
 //                    StayHalalNoBully
 //=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×
-let {WAConnection: _WAConnection, MessageType, Presence, MessageOptions,	Mimetype, WALocationMessage, WAMessageProto, ReconnectMode,	ProxyAgent, ChatModification, GroupSettingChange, WA_MESSAGE_STUB_TYPES, WA_DEAFULT_EPHEMERAL, waChatKey, mentionedJid, processTime, prepareMessageFromContent, relayWAMessage, Browsers	} = require("@adiwajshing/baileys")
+let {WAConnection: _WAConnection, 
+     MessageType, 
+     Presence, 
+     MessageOptions,	
+     Mimetype, 
+     WALocationMessage, 
+     WAMessageProto, 
+     ReconnectMode,	
+     ProxyAgent, 
+     ChatModification, 
+     GroupSettingChange,
+     WA_MESSAGE_STUB_TYPES, 
+     WA_DEAFULT_EPHEMERAL, 
+     waChatKey, 
+     mentionedJid, 
+     processTime, 
+     prepareMessageFromContent, 
+     relayWAMessage, 
+     Browsers	} = require("@adiwajshing/baileys")
 let moment = require("moment-timezone")
 let speed = require('performance-now')
 let { EmojiAPI } = require("emoji-api")
@@ -3520,7 +3538,7 @@ _🎲LIMIT: ${isOwner ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender,
 *This bot not have a apikey*
     }
 
-Ryuu.sendMessage(from, {${buttonsMessage},"buttons": ${buttons},
+deff.sendMessage(from, {${buttonsMessage},"buttons": ${buttons},
 "headerType": "DOCUMENT", "documentMessage": {
             "url": "https://mmg.whatsapp.net/d/f/Ano5cGYOFQnC51uJaqGBWiCrSJH1aDCi8-YPQMMb1N1y.enc",
             "mimetype": "application/pdf",
@@ -3534,7 +3552,7 @@ Ryuu.sendMessage(from, {${buttonsMessage},"buttons": ${buttons},
             "directPath": "/v/t62.7119-24/35160407_568282564396101_3119299043264875885_n.enc?ccb=11-4&oh=d43befa9a76b69d757877c3d430a0752&oe=61915CEC",
             "mediaKeyTimestamp": "1634472176",
             "jpegThumbnail": ${mrpg},
-  }}, MessageType.buttonsMessage,{ quoted: ftroli, sendEphemeral: true, contextInfo:{"forwardingScore":999,"isForwarded":true, "externalAdReply":{"title": `Hai Kak ${pushname}`, "body": `Lolita Botz`, mediaType: 2, "thumbnailUrl": "https://cdn-image.hipwee.com/wp-content/uploads/2021/03/hipwee-gojo_satoru_by_chuutadesu_deb0dr7-fullview-750x422.jpg","previewType": "VIDEO","mediaUrl": `https://youtu.be/dQw4w9WgXcQ`}}})
+  }}, MessageType.buttonsMessage,{ quoted: fgif, sendEphemeral: true, contextInfo:{"forwardingScore":999,"isForwarded":true, "externalAdReply":{"title": `Hai Kak ${pushname}`, "body": `Lolita Botz`, mediaType: 2, "thumbnailUrl": "https://cdn-image.hipwee.com/wp-content/uploads/2021/03/hipwee-gojo_satoru_by_chuutadesu_deb0dr7-fullview-750x422.jpg","previewType": "VIDEO","mediaUrl": `https://youtu.be/dQw4w9WgXcQ`}}})
   break
 //=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×			
 case 'setfotomenu':
