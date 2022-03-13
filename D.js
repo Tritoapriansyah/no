@@ -445,7 +445,7 @@ function randomNomor(min, max = null) {
                         "imageMessage": {
                             "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc",
                             "mimetype": "image/jpeg",
-                            "caption": `[JBOT V1]`,
+                            "caption": `[LOLITA BOT]`,
                             "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=",
                             "fileLength": "28777",
                             "height": 1080,
@@ -1652,7 +1652,7 @@ addBalance(sender, randomNomor(80), balance)
 
 ////=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×
 let spam1 = `𝙹𝚊𝚗𝚐𝚊𝚗 𝚜𝚙𝚊𝚖 𝚢𝚊 𝚔𝚊𝚔\n𝙱𝚎𝚛𝚒𝚔𝚊𝚗 𝚓𝚎𝚍𝚊 3 𝚍𝚎𝚝𝚒𝚔/𝚙𝚎𝚛𝚒𝚗𝚝𝚊𝚑`
-let spam2 = 'Deffbotz🥰'
+let spam2 = 'LOLITA BOT BY TRITO'
 let spam3 = [{
 buttonId: `${prefix}maap`,
 buttonText: {
@@ -1872,7 +1872,7 @@ other: function (who = '') {
   return who === this.a ? this.b : who === this.b ? this.a : ''
 },
     }
-    await deff.sendButton(from, 'ᴡᴀɪᴛɪɴɢ ᴀ ᴘᴀʀᴛɴᴇʀ', `𝙳𝙴𝙵𝙵𝙱𝙾𝚃𝚉`, 'Keluar', prefix + 'leave')
+    await deff.sendButton(from, 'ᴡᴀɪᴛɪɴɢ ᴀ ᴘᴀʀᴛɴᴇʀ', `LOLITA BOT`, 'Keluar', prefix + 'leave')
   }
   break
 }
@@ -3288,16 +3288,16 @@ vcard3 = 'BEGIN:VCARD\n' +
             `FN: ${control.NamaOwner}\n` +
             `item1.TEL;waid=${control.NomorOwner}:${control.NomorOwner}\n` +
             `item1.X-ABLabel:👑 Creator\n` +
-            `item2.EMAIL;type=INTERNET:daffayudhistira93@gmail.com\n` +
-            `item2.X-ABLabel:📧 Email\n` +
-            `item3.URL:https://youtube.com/c/DEFFBOTZZ/\n` +
-            `item3.X-ABLabel:⚙️ Channel Owner\n` +
+            `item2.EMAIL;type=INTERNET:riantrito@gmail.com\n` +
+            `item2.X-ABLabel:📧 mail\n` +
+            `item3.URL:https://github.com/Tritoapriansyah\n` +
+            `item3.X-ABLabel:⚙️ github Owner\n` +
             `item4.ADR:;;🇮🇩 Indonesia;;;;\n` +
             `item4.X-ABADR:ac\n` +
             `item4.X-ABLabel:🌍 Region\n` +
-            `item5.X-ABLabel:⚔️ DEFFBOTZ Owner\n` +
+            `item5.X-ABLabel:⚔️ Lolita Bot Owner\n` +
             'END:VCARD'.trim()
-deff.sendMessage(from, {displayName: `DEFF`, vcard: vcard3}, contact,) 
+deff.sendMessage(from, {displayName: `LOLITA`, vcard: vcard3}, contact,) 
      break       
 //=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×			
 
@@ -3389,7 +3389,7 @@ _🎲LIMIT: ${isOwner ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender,
     footerText:`
 ┌─❖
 │*「 MAIN MENU 」*
-└┬❖ *「 JBOT V1」*
+└┬❖ *「 LOLITA BOT」*
 ┌┤✑  *>request* <request ke owner>
 ││✑  *>requestdev* <request ke developer>
 ││✑  *>report* <lapor bug syg>
@@ -3402,7 +3402,7 @@ _🎲LIMIT: ${isOwner ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender,
 │✙ *${prefix}rules*
 └─────────────────┈ ⳹
 
-┏━━━━━「 JBOT V1 」━━━━━━⭓ 
+┏━━━━━「 MENU 」━━━━━━⭓ 
 ┃╔═══════════✪「 OWNER 」	        
 ┃╠${prefix}broadcast
 ┃╠${prefix}broadcast2
@@ -3516,13 +3516,9 @@ _🎲LIMIT: ${isOwner ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender,
 ┃╠${prefix}level
 ┃╠${prefix}leaderboards
 ┃╚═════════════════✪
-┗━━━「 JBOT V1 」━━━⭓
+┗━━━「 LOLITA BOT 」━━━⭓
 *This bot not have a apikey*
-    `
-  , imageMessage: imageMsg,
-    buttons: buttons,
-    headerType: 4
-  }
+    }
 
 Ryuu.sendMessage(from, {${buttonsMessage},"buttons": ${buttons},
 "headerType": "DOCUMENT", "documentMessage": {
@@ -4032,12 +4028,12 @@ if (isMedia && !mek.message.videoMessage || isQuotedImage) {
 let encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 bc = await deff.downloadMediaMessage(encmedia)
 for (let _ of anu) {
-deff.sendMessage(_.jid, bc, image, {quoted:ftroli,caption: `*「 BROADCAST [ • BOTWEA • ] 」*\n\n${body.slice(4)}`})
+deff.sendMessage(_.jid, bc, image, {quoted:ftroli,caption: `*「 BROADCAST LOLITA BOT 」*\n\n${body.slice(4)}`})
 }
 reply('Suksess broadcast')
 } else {
 for (let _ of anu) {
-sendMess(_.jid, `*「 BOTWEA BROADCAST 」*\n\n${body.slice(4)}`)
+sendMess(_.jid, `*「 LOLITA BOT BROADCAST 」*\n\n${body.slice(4)}`)
 }
 reply('Suksess broadcast')
 }
@@ -4055,14 +4051,14 @@ if (!isUser) return sendButMessage(from, a, b, ton,{quoted : freply})
              let encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
              bc = await deff.downloadMediaMessage(encmedia)
              for (let _ of anu) {
-             deff.sendMessage(_.jid, bc, image, {quoted:freply,caption: `*「 BROADCAST [ • BOTWEA • ] 」*\n\n${body.slice(4)}`})
+             deff.sendMessage(_.jid, bc, image, {quoted:freply,caption: `*「 BROADCAST LOLITA BOT 」*\n\n${body.slice(4)}`})
 }
              reply('Suksess broadcast')
              } else {
              for (let _ of anu) {
 deff.sendMessage(_.jid, 
-	    {"contentText": `*「 BROADCAST [ • BOTWEA • ] 」*\n\n${body.slice(4)}`,
-	    "footerText": '©DEFF',
+	    {"contentText": `*「 BROADCAST LOLITABOT 」*\n\n${body.slice(4)}`,
+	    "footerText": '©TRITO',
 	    "buttons": [
 	    {"buttonId": `!owner`,
 	    "buttonText": {"displayText": "OWNER"
@@ -4085,7 +4081,7 @@ if (!isUser) return sendButMessage(from, a, b, ton,{quoted : freply})
              let encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
              bc2 = await deff.downloadMediaMessage(encmedia)
              for (let _ of anu) {
-             deff.sendMessage(_.jid, { contentText: `*🔖 BROADCAST [ • BOTWEA • ] 🔖*\n\n${body.slice(4)}`, footerText: '©DEFF', buttons: [{ buttonId: `${prefix}command`, buttonText: { displayText: 'MENU' }, type: 1 }, { buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER' }, type: 1 }], headerType: 6, locationMessage: { degreesLatitude: 0, degreesLongitude: 0, jpegThumbnail: bc2 }}, 'buttonsMessage')
+             deff.sendMessage(_.jid, { contentText: `*🔖 BROADCAST LOLITA BOT 🔖*\n\n${body.slice(4)}`, footerText: '©DEFF', buttons: [{ buttonId: `${prefix}command`, buttonText: { displayText: 'MENU' }, type: 1 }, { buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER' }, type: 1 }], headerType: 6, locationMessage: { degreesLatitude: 0, degreesLongitude: 0, jpegThumbnail: bc2 }}, 'buttonsMessage')
 }
              reply('Suksess broadcast')
 }
@@ -4140,12 +4136,12 @@ var buttonss = [
 
 buttonMessagee = {
 contentText: ini_gopayy,
-footerText: `©DEFF` ,
+footerText: `©Trito` ,
 buttons: buttonss,
 headerType: 1
 }
 deff.sendMessage(from,  buttonMessagee, MessageType.buttonsMessage,{
-        caption: '[ • BOTWEA • ]',
+        caption: '[ • LOLITA BOT • ]',
         "contextInfo": {
             text: 'hi',
             "forwardingScore": 1000000000,
@@ -4687,9 +4683,7 @@ pada bot ini,KAMI TIDAK AKAN
 BERTANGGUNG JAWAB!
 TERIMAKASIH TELAH
 MENGGUNAKAN BOT KAMI
-Owner DEFFBOTZ:
-
-wa.me/6289501060783`
+`
 sendButMessage(from, anjeng, `Baca rulesnya!, Jangan di baca doang, Patuhi juga ajg❗`, [
 {
 buttonId: `${prefix} command`,
