@@ -1636,8 +1636,9 @@ reply("*「 BACA PERATURAN GC 」Selamat Tinggal Sobat, Lain kali Kalau Ada Masu
 deff.updatePresence(from, Presence.composing)// hapus aja bang kalo risih	
 deff.chatRead(from, "read")// hapus aja bang kalo risih
 //=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×
+totalChat = await deff.chats.all()
 runt = process.uptime() 
-deff.setStatus(`Aktif Selama : ${kyun(runt)} `).catch((_)=>_);
+deff.setStatus(`runtime: ${kyun(runt)} total chat: ${totalChat.length} `).catch((_)=>_);
 settingstatus = new Date() * 1;            
 //=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×
 if (isCmd && !isGroup)
@@ -2947,9 +2948,7 @@ case 'kues': case 'quest': case 'misi':
 				reply('Surat Sukses Dikirim')
 				break
 //=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×			
-case 'sc': case 'script':
-reply('https://youtube.com/channel/UCSAcYW8MkFyaVQz9asa3q5Q') //Kalo punya otak jangan diubah ya adik²
-break
+
 //=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×			
 			
 case 'ocr':
@@ -3349,7 +3348,6 @@ if (!isUser) return sendButMessage(from, a, b, ton,{quoted : freply})
 
 case 'menu':
 case 'help':
-case 'daffa': 
 if (!isUser) return sendButMessage(from, a, b, ton,{quoted : freply}) 
  
 deff.sendMessage(from, 'Loading... ', text)
@@ -3526,18 +3524,21 @@ _🎲LIMIT: ${isOwner ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender,
     headerType: 4
   }
 
-prep = await deff.prepareMessageFromContent(from, { buttonsMessage }, {
-quoted: ftroli, contextInfo: {
-mentionedJid: parseMention(lol), externalAdReply: {
-  title: `𝘏𝘌𝘓𝘓𝘖 ${pushname} `,
-  body: `${ucapanWaktu} Semoga harimu menyenangkan`,
-  mediaType: 2,
-  mediaUrl: "https://youtu.be/5DXNC4_Bj_U",
-  thumbnail: fs.readFileSync('./gambar/menu.jpg'),
-}, forwardingScore: 508, isForwarded: false, mentionedJid: [Tag + '@s.whatsapp.net', senderr]
-    }
-  })
-  deff.relayWAMessage(prep)
+Ryuu.sendMessage(from, {${buttonsMessage},"buttons": ${buttons},
+"headerType": "DOCUMENT", "documentMessage": {
+            "url": "https://mmg.whatsapp.net/d/f/Ano5cGYOFQnC51uJaqGBWiCrSJH1aDCi8-YPQMMb1N1y.enc",
+            "mimetype": "application/pdf",
+            "title": "LolitaBot.pdf", // nama.pdf
+            "fileSha256": "8Xfe3NQDhjwVjR54tkkShLDGrIFKR9QT5EsthPyxDCI=",
+            "fileLength": "999999999999",
+            "pageCount": 999,
+            "mediaKey": "XWv4hcnpGY51qEVSO9+e+q6LYqPR3DbtT4iqS9yKhkI=",
+            "fileName": "Lolita Bot", // file name
+            "fileEncSha256": "NI9ykWUcXKquea4BmH7GgzhMb3pAeqqwE+MTFbH/Wk8=",
+            "directPath": "/v/t62.7119-24/35160407_568282564396101_3119299043264875885_n.enc?ccb=11-4&oh=d43befa9a76b69d757877c3d430a0752&oe=61915CEC",
+            "mediaKeyTimestamp": "1634472176",
+            "jpegThumbnail": fs.readFileSync(`./gambar/menu.jpg`)
+  }}, MessageType.buttonsMessage,{ quoted: ftroli, sendEphemeral: true, contextInfo:{"forwardingScore":999,"isForwarded":true, "externalAdReply":{"title": `Hai Kak ${pushname}`, "body": `Lolita Botz`, mediaType: 2, "thumbnailUrl": "https://cdn-image.hipwee.com/wp-content/uploads/2021/03/hipwee-gojo_satoru_by_chuutadesu_deb0dr7-fullview-750x422.jpg","previewType": "VIDEO","mediaUrl": `https://youtu.be/dQw4w9WgXcQ`}}})
   break
 //=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×			
 case 'setfotomenu':
